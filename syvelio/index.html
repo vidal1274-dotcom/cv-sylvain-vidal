@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SYVELIO — Étude auprès des professionnels de santé</title>
+  <meta name="description" content="Questionnaire court SYVELIO destiné aux professionnels de santé.">
+  <style>
+    :root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#5e6b7f;--accent:#275efe;--accent2:#eaf0ff;--border:#dce3ee;--ok:#0f766e}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+    .wrap{max-width:860px;margin:auto;padding:24px}
+    .hero{background:linear-gradient(135deg,#ffffff,#eef3ff);border:1px solid var(--border);border-radius:22px;padding:28px;box-shadow:0 8px 30px rgba(20,35,70,.06)}
+    .badge{display:inline-block;background:var(--accent2);color:var(--accent);font-weight:700;padding:6px 10px;border-radius:999px;font-size:.85rem}
+    h1{font-size:2rem;line-height:1.15;margin:14px 0 10px}
+    h2{margin-top:0}
+    p{color:var(--muted)}
+    .important{background:#eefaf8;border-left:4px solid var(--ok);padding:12px 14px;border-radius:8px;color:#164e63}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px;margin-top:18px}
+    .q{padding:18px 0;border-bottom:1px solid #edf1f6}
+    .q:last-child{border-bottom:0}
+    label.title{display:block;font-weight:700;margin-bottom:10px;color:var(--text)}
+    textarea,input[type=text]{width:100%;border:1px solid #cfd8e6;border-radius:10px;padding:12px;font:inherit;background:#fff}
+    textarea{min-height:92px;resize:vertical}
+    .choices{display:grid;gap:8px}
+    .choice{display:flex;gap:9px;align-items:flex-start;color:#374151}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    button{border:0;border-radius:12px;padding:12px 16px;font-weight:700;font-size:1rem;cursor:pointer}
+    .primary{background:var(--accent);color:#fff}
+    .secondary{background:#eef2f7;color:#25324a}
+    .footer{text-align:center;color:#7b8798;font-size:.9rem;padding:28px 8px}
+    @media(max-width:600px){.wrap{padding:14px}.hero,.card{padding:18px}h1{font-size:1.65rem}}
+    @media print{body{background:#fff}.wrap{max-width:none;padding:0}.hero,.card{box-shadow:none;border-color:#ccc}.actions,.footer{display:none}textarea,input[type=text]{border-color:#aaa}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">Étude terrain — SYVELIO</span>
+      <h1>Professionnels de santé : votre retour m’intéresse</h1>
+      <p>SYVELIO est un projet visant à mieux comprendre les tâches chronophages et les difficultés liées aux outils numériques utilisés au quotidien par les professionnels de santé.</p>
+      <p><strong>Il ne s’agit pas de vous vendre un logiciel ni de vous demander de remplacer vos outils actuels.</strong> L’objectif est d’identifier les besoins réellement rencontrés sur le terrain.</p>
+      <div class="important">Temps de réponse indicatif : 5 à 10 minutes. Merci de ne saisir aucune donnée concernant un patient.</div>
+    </section>
+
+    <form class="card" onsubmit="return false;">
+      <h2>Questionnaire court</h2>
+
+      <div class="q">
+        <label class="title">1. Quelle est votre profession ?</label>
+        <input type="text" placeholder="Médecin généraliste, spécialiste, secrétaire médicale, autre…">
+      </div>
+
+      <div class="q">
+        <label class="title">2. Quels logiciels ou outils numériques utilisez-vous quotidiennement ?</label>
+        <textarea></textarea>
+      </div>
+
+      <div class="q">
+        <label class="title">3. Quelles tâches administratives ou informatiques vous prennent le plus de temps ?</label>
+        <textarea></textarea>
+      </div>
+
+      <div class="q">
+        <label class="title">4. Combien de temps estimez-vous perdre chaque semaine à cause de tâches répétitives ou peu optimisées ?</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="temps"> Moins de 1 heure</label>
+          <label class="choice"><input type="radio" name="temps"> 1 à 3 heures</label>
+          <label class="choice"><input type="radio" name="temps"> 3 à 5 heures</label>
+          <label class="choice"><input type="radio" name="temps"> Plus de 5 heures</label>
+        </div>
+      </div>
+
+      <div class="q">
+        <label class="title">5. Quelle tâche aimeriez-vous automatiser ou simplifier en priorité ?</label>
+        <textarea></textarea>
+      </div>
+
+      <div class="q">
+        <label class="title">6. Votre logiciel actuel vous oblige-t-il à ressaisir certaines informations ?</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="ressaisie"> Souvent</label>
+          <label class="choice"><input type="radio" name="ressaisie"> Parfois</label>
+          <label class="choice"><input type="radio" name="ressaisie"> Rarement</label>
+          <label class="choice"><input type="radio" name="ressaisie"> Jamais</label>
+        </div>
+      </div>
+
+      <div class="q">
+        <label class="title">7. Avez-vous déjà cherché une solution à l’un de ces problèmes ? Si oui, laquelle ?</label>
+        <textarea></textarea>
+      </div>
+
+      <div class="q">
+        <label class="title">8. Si vous pouviez changer une seule chose dans votre organisation numérique actuelle, laquelle serait-ce ?</label>
+        <textarea></textarea>
+      </div>
+
+      <div class="q">
+        <label class="title">9. Seriez-vous prêt(e) à tester un outil complémentaire sans remplacer votre logiciel médical actuel ?</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="test"> Oui</label>
+          <label class="choice"><input type="radio" name="test"> Peut-être</label>
+          <label class="choice"><input type="radio" name="test"> Non</label>
+        </div>
+      </div>
+
+      <div class="q">
+        <label class="title">10. À titre indicatif, quel est le coût mensuel approximatif de votre logiciel métier actuel, options et services compris ?</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="cout"> Moins de 50 € / mois</label>
+          <label class="choice"><input type="radio" name="cout"> 50 à 100 € / mois</label>
+          <label class="choice"><input type="radio" name="cout"> 100 à 200 € / mois</label>
+          <label class="choice"><input type="radio" name="cout"> 200 à 300 € / mois</label>
+          <label class="choice"><input type="radio" name="cout"> Plus de 300 € / mois</label>
+          <label class="choice"><input type="radio" name="cout"> Je ne sais pas</label>
+          <label class="choice"><input type="radio" name="cout"> Je préfère ne pas répondre</label>
+        </div>
+      </div>
+
+      <div class="q">
+        <label class="title">11. Ce tarif vous paraît-il justifié par les services rendus ?</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="valeur"> Oui, totalement</label>
+          <label class="choice"><input type="radio" name="valeur"> Plutôt oui</label>
+          <label class="choice"><input type="radio" name="valeur"> Plutôt non</label>
+          <label class="choice"><input type="radio" name="valeur"> Pas du tout</label>
+        </div>
+      </div>
+
+      <div class="q">
+        <label class="title">12. Si un outil vous faisait réellement gagner du temps chaque semaine, quel mode vous semblerait le plus acceptable ?</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mode"> Abonnement mensuel</label>
+          <label class="choice"><input type="radio" name="mode"> Achat unique</label>
+          <label class="choice"><input type="radio" name="mode"> Inclus dans une solution existante</label>
+          <label class="choice"><input type="radio" name="mode"> Je ne sais pas</label>
+        </div>
+      </div>
+
+      <div class="q">
+        <label class="title">13. Quel problème professionnel lié au numérique ou à l’administratif vous gêne le plus aujourd’hui ?</label>
+        <textarea></textarea>
+      </div>
+
+      <div class="q">
+        <label class="title">14. Accepteriez-vous de voir une future maquette de SYVELIO ou de participer à un court entretien ?</label>
+        <div class="choices">
+          <label class="choice"><input type="checkbox"> Oui, pour voir une maquette</label>
+          <label class="choice"><input type="checkbox"> Oui, pour un entretien de 15 à 20 minutes</label>
+          <label class="choice"><input type="checkbox"> Pas pour le moment</label>
+        </div>
+      </div>
+
+      <div class="q">
+        <label class="title">15. Coordonnées facultatives pour être recontacté(e)</label>
+        <input type="text" placeholder="Nom, téléphone ou e-mail — facultatif">
+      </div>
+
+      <div class="actions">
+        <button class="primary" type="button" onclick="window.print()">Imprimer / enregistrer en PDF</button>
+        <button class="secondary" type="reset">Effacer mes réponses</button>
+      </div>
+    </form>
+
+    <div class="footer">SYVELIO — Étude auprès des professionnels de santé</div>
+  </main>
+</body>
+</html>
